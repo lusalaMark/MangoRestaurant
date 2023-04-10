@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MangoServices.ProductAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MangoServices.ProductAPI.DBContexts
 {
@@ -8,5 +9,6 @@ namespace MangoServices.ProductAPI.DBContexts
         {
 
         }
+        public DbSet<Product> Products { get; set; }
     }
 }
